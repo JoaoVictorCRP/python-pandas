@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Lendo dataset 
-df = pd.read_csv('./gapminder-pop.csv')
+df = pd.read_csv('./1-gapminder-pop.csv')
 
 # Renomear Coluna
 df = df.rename(columns={
@@ -35,7 +35,7 @@ df = df.rename(columns={
 # print(df['País'].unique())
 
 # Aplicando filtros e colocando em uma variável
-# dados_brasil = df.loc[df['País'] == 'Brazil']
+# dados_brasil = df.loc[df['País'] == 'Germany']
 # print(dados_brasil)
 
 # Agrupando dados ( Group By)
@@ -47,5 +47,5 @@ df = df.rename(columns={
 # print(expec_vida_media_por_ano)
 
 # PIB Global (PIB somado)
-pib_global = df['PIB per Capita'].sum()
-print(pib_global)
+# pib_global = df['PIB per Capita'].sum()
+# print(pib_global)
